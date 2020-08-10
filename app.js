@@ -6,10 +6,8 @@ const cors = require('cors')
 // Initialize app
 const app = express()
 
-
-
 // Connect to mongodb
-mongoose.connect("mongodb+srv://vim:vim_vim@hereum.fmt74.mongodb.net/points?retryWrites=true&w=majority",
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/hereum',
   { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
   .then(() => {
     console.log('MongoDB connected')
