@@ -10,13 +10,13 @@ const app = express()
 
 // Connect to mongodb
 mongoose.connect("mongodb+srv://vim:vim_vim@hereum.fmt74.mongodb.net/points?retryWrites=true&w=majority",
-  { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
-
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function () {
-  console.log('MongoDB connected')
-});
+  { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
+  .then(() => {
+    console.log('MongoDB connected')
+  })
+  .catch(err => {
+    console.error.bind(console, 'connection error:')
+  })
 
 
 // Middlewares
