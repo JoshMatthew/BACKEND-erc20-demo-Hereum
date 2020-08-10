@@ -2,7 +2,7 @@
 A simple ERC20 interaction using Metmask wallet. This will serve as the api for the [app](https://github.com/JoshMatthew/CLIENT-erc20-hereum).
 
 ## Installation
-This installation guide is a continuation of the [fronend](https://github.com/JoshMatthew/CLIENT-erc20-hereum). Please consider going there first.
+This installation guide is a continuation of the [frontend](https://github.com/JoshMatthew/CLIENT-erc20-hereum). Please consider going there first.
 
 ### 1. Set up file structure
 First, go back to the root folder and once you're there, type this
@@ -16,7 +16,7 @@ You can initialize npm by
 ```console
 user@me:~$ npm init --y
 ```
-Once it's initialized you can now initialize a local git repo by
+Once npm is initialized you can now initialize a local git repo by
 ```console
 user@me:~$ git init
 ```
