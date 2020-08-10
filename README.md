@@ -1,4 +1,4 @@
-# erc20-demo-Hereum API-
+# BACKEND-erc20-demo-Hereum
 A simple Backend for [Hereum](https://github.com/JoshMatthew/CLIENT-erc20-hereum) app and ERC20 token interaction using Metmask wallet.
 
 ## Installation
