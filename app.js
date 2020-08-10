@@ -21,12 +21,24 @@ db.once('open', function () {
 
 // Middlewares
 app.use(express.json())
-app.use(cors()) // Used to allow cors for all sites
+
+// Used to allow cors for specific sites
+const whitelist = ['https://hereum.herokuapp.com/', 'https://joshmatthew.github.io/PeewPeew/']
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
+}
 
 
 // Routes
-app.use('/token', require('./routes/routes.token')) // index route
-app.use('/peewpeew', require('./routes/routes.peewpeew')) // index route
+app.use('/token', cors(corsOptions), require('./routes/routes.token')) // index route
+app.use('/peewpeew', cors(corsOptions), require('./routes/routes.peewpeew')) // index route
 
 
 // PORT
