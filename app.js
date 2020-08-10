@@ -7,7 +7,7 @@ const cors = require('cors')
 const app = express()
 
 // Connect to mongodb
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/hereum',
+mongoose.connect(process.env.DATABASE_URI || 'mongodb://localhost/hereum',
   { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
   .then(() => {
     console.log('MongoDB connected')
