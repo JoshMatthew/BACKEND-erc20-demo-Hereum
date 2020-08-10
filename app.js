@@ -13,7 +13,7 @@ mongoose.connect(process.env.DATABASE_URI || 'mongodb://localhost/hereum',
     console.log('MongoDB connected')
   })
   .catch(err => {
-    console.log(err)
+    console.log('Error', err)
   })
 
 
