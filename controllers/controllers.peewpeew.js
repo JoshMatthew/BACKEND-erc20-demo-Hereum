@@ -6,10 +6,8 @@ module.exports = {
 
     // Check if acc_id already exist. If exist, update the score, if no, allocate a new one
     const query = { account_id: acc_id }
-    AccountPoints.findOneAndUpdate(query, { points }, (err, result) => {
-      if (err) {
-        res.status(400).json({ msg: "Point not added", err })
-      } else {
+    AccountPoints.findOneAndUpdate(query, { points }).exec()
+      .then(result => {
         if (result) {
           res.status(200).json({ msg: "Point updated", point: result })
         } else {
@@ -22,8 +20,9 @@ module.exports = {
               res.status(400).json({ msg: "Point not added", err });
             })
         }
-      }
-    })
+      }).catch(err => {
+        res.status(400).json({ msg: "Point not added", err })
+      })
   },
   getFromPeewPeew: (req, res) => {
     const acc_id = req.params.acc
