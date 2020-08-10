@@ -26,7 +26,7 @@ Boom! Done!
 Now we have both npm and git initialized we can now clone this repo and install its dependencies. <br><br>
 First we have to clone this repo, kindly type
 ```console
-user@me:~$ git clone https://github.com/JoshMatthew/API-erc20-demo-Hereum-.git
+user@me:~$ git clone https://github.com/JoshMatthew/BACKEND-erc20-demo-Hereum.git
 ```
 After that, we can now install our dependencies by doing
 ```console
