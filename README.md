@@ -1,5 +1,5 @@
 # erc20-demo-Hereum API-
-A simple API for Hereum app and ERC20 token interaction using Metmask wallet. This will serve as the api for the [app](https://github.com/JoshMatthew/CLIENT-erc20-hereum).
+A simple API for [Hereum](https://github.com/JoshMatthew/CLIENT-erc20-hereum) app and ERC20 token interaction using Metmask wallet.
 
 ## Installation
 This installation guide is a continuation of the [frontend](https://github.com/JoshMatthew/CLIENT-erc20-hereum). Please consider going there first.
