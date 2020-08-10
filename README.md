@@ -60,7 +60,7 @@ You also have to get your metamask public and private key by opening your metama
 ### 6. Get free ETH for your Ropsten test acc
 In your metamask wallet, kindly copy your public key and go to this [website](https://faucet.ropsten.be/), paste your public key and click on **Send me test Ether**. Do not spam the button to avoid you from getting temporarily blocked. 
 
-## 7. Deployment of ERC20 to Ropsten
+### 7. Deployment of ERC20 to Ropsten
 Now your `.env` file should be something like this
 ```javascript
 ADDRESS = "0x2573F143d3674D995C339Af3682Fc4cc29eb7882"
