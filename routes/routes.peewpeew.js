@@ -9,7 +9,7 @@ const { postFromPeewPeew, getFromPeewPeew } = require('../controllers/controller
 * access: PUBLIC 
 * desc: sends the points to the database so hereum client can retrieve it
 */
-route.post('/points', postFromPeewPeew)
+route.post('/points_add', postFromPeewPeew)
 
 /*
 * method: GET
